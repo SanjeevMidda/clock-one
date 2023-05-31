@@ -1,0 +1,71 @@
+*{
+  margin: 0px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+.App{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.clock{
+  border-radius: 50%;
+  border: 1px solid blue;
+  width: 400px;
+  height: 400px;
+}
+
+.numbers{
+  /* border: 1px solid blue; */
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .numbers :nth-child(2){
+  transform: rotate(90deg);
+}
+
+.numbers :nth-child(3){
+  transform: rotate(180deg);
+}
+
+.numbers :nth-child(4){
+  transform: translate(-20px) rotate(-90deg);
+} */
+
+/* h3{
+  z-index: 3;
+  position: absolute;
+} */
+
+.secondHand{
+  width: 5px;
+  height: 100px;
+  background-color: blue;
+  transform-origin: bottom;
+  transition: all 1s;
+  position: relative;
+  top: -50px;
+  animation: movement 1s infinite;
+  border-radius: 10px 10px;
+}
+
+h3{
+  margin-bottom: 10px;
+}
+
+h1{
+  margin-top: 10px;
+}
+
+@keyframes movement {
+  from{background-color: blue;}
+  to{background-color: orangered;}
+}
